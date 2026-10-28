@@ -1,0 +1,72 @@
+{
+  "model": {
+    "in_channel": 3,
+    "embed_channel": 64,
+    "mlp_list": [
+      128,
+      256
+    ],
+    "head_list": [
+      2,
+      4,
+      8
+    ],
+    "enc_depths": [
+      2,
+      2,
+      2
+    ],
+    "patch_list": [
+      256,
+      256,
+      256
+    ],
+    "drop_path": 0.2,
+    "fps_radius_list": [
+      0.0141,
+      0.02
+    ],
+    "ball_radius_list": [
+      0.04,
+      0.08
+    ],
+    "grid_size_list": [
+      0.02,
+      0.04
+    ],
+    "pe_kernel_size_list": [
+      3,
+      3,
+      3
+    ],
+    "use_offset": true,
+    "use_fourier": false,
+    "n_freq": 6,
+    "use_raw_coord": true,
+    "traceable": false,
+    "reduce": "max",
+    "n_patch": 128,
+    "k": 64,
+    "mask_ratio": 0.7,
+    "enc_mlp_list": [
+      512,
+      384
+    ],
+    "enc_depth": 12,
+    "enc_drop_path_rate": 0.1,
+    "enc_num_heads": 6,
+    "dec_depth": 4,
+    "dec_num_heads": 6,
+    "dec_drop_path_rate": 0.1,
+    "use_extra": false
+  },
+  "input": {
+    "n_points": 25000,
+    "grid_size": 0.01
+  },
+  "loss": {
+    "repulsion_weight": 1.0,
+    "repulsion_k": 5,
+    "repulsion_alpha": 0.5
+  }
+}
