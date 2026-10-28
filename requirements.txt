@@ -1,0 +1,17 @@
+# Dependency inventory, not a tested lockfile.
+# Select builds compatible with your PyTorch/CUDA environment.
+torch
+numpy
+einops
+timm
+addict
+torch-geometric
+torch-scatter
+torch-cluster
+spconv
+flash-attn
+
+# pointops is installed separately from requirements-pointops.txt.
+# Build helpers for the native Chamfer extension:
+setuptools
+ninja

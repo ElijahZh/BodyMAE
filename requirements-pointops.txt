@@ -1,0 +1,4 @@
+# Install after compatible PyTorch/CUDA dependencies are available:
+# python -m pip install --no-build-isolation -r requirements-pointops.txt
+# Source/API checked revision; GPU execution has not been tested here.
+pointops @ git+https://github.com/Pointcept/Pointcept.git@2b97e6e77a5ad731778f268ccea28ed684367b3f#subdirectory=libs/pointops
